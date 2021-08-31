@@ -13,17 +13,8 @@ function Home() {
            showsVerticalScrollIndicator={false}
            style={styles.container}>
 
-                <Carrousel />
 
-                <ScrollItens/>
 
-                <ImagemHome1 />
-
-                <ScrollItens/>
-
-                <ImagemHome2 />
-
-                <Footer />
 
             </ScrollView>
        

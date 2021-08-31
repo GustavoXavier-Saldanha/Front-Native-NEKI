@@ -1,10 +1,8 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home';
-import Products from '../screens/Products'
 import Login from '../screens/Login'
 import Icon from '@expo/vector-icons/AntDesign';
-import Cart from '../screens/Cart'
 
 const AuthBottom = createBottomTabNavigator();
 
@@ -14,13 +12,7 @@ const icons = {
     },
     Perfil: {
         name: 'logout'
-    },
-    Products: {
-        name: 'tags'
-    },
-    Cart: {
-        name: 'shoppingcart'
-    },
+    }
 }
 
 function AuthRoutes() {
@@ -40,7 +32,7 @@ function AuthRoutes() {
             }}
         >
             <AuthBottom.Screen name="Home" component={Home} />
-            <AuthBottom.Screen name="Products" component={Products} />
+    
             <AuthBottom.Screen name="Perfil" component={Login} />
         </AuthBottom.Navigator>
     );
